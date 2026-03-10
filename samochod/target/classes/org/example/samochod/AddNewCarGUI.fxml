@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="20" prefHeight="400" prefWidth="500" vgap="18"
+          xmlns="http://javafx.com/javafx/17.0.12"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="org.example.samochod.AddNewCarController">
+
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25"/>
+    </padding>
+
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" minWidth="160"/>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <children>
+
+        <!-- MODEL -->
+        <Label alignment="CENTER_RIGHT" text="Model" GridPane.rowIndex="0">
+            <font><Font size="16"/></font>
+        </Label>
+        <TextField fx:id="modelTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <!-- NUMER REJ -->
+        <Label alignment="CENTER_RIGHT" text="Numer Rejestracyjny" GridPane.rowIndex="1">
+            <font><Font size="16"/></font>
+        </Label>
+        <TextField fx:id="nrRejTextField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <!-- WAGA -->
+        <Label alignment="CENTER_RIGHT" text="Waga" GridPane.rowIndex="2">
+            <font><Font size="16"/></font>
+        </Label>
+        <TextField fx:id="wagaSamochodTextField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <!-- PRĘDKOŚĆ -->
+        <Label alignment="CENTER_RIGHT" text="Prędkość Maksymalna" GridPane.rowIndex="3">
+            <font><Font size="16"/></font>
+        </Label>
+        <TextField fx:id="predkoscMaksymalnaTextField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <!-- SPRZĘGŁO -->
+        <Label alignment="CENTER_RIGHT" text="Sprzęgło" GridPane.rowIndex="4">
+            <font><Font size="16"/></font>
+        </Label>
+        <ComboBox fx:id="sprzegloComboBox" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <!-- SILNIK -->
+        <Label alignment="CENTER_RIGHT" text="Silnik" GridPane.rowIndex="5">
+            <font><Font size="16"/></font>
+        </Label>
+        <ComboBox fx:id="silnikComboBox" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        <!-- SKRZYNIA -->
+        <Label alignment="CENTER_RIGHT" text="Skrzynia Biegów" GridPane.rowIndex="6">
+            <font><Font size="16"/></font>
+        </Label>
+        <ComboBox fx:id="skrzyniaComboBox" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        <!-- POZYCJA -->
+        <Label alignment="CENTER_RIGHT" text="Pozycja" GridPane.rowIndex="7">
+            <font><Font size="16"/></font>
+        </Label>
+        <ComboBox fx:id="pozycjaComboBox" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+        <!-- BUTTONS -->
+        <VBox alignment="CENTER" spacing="12" GridPane.columnSpan="2" GridPane.rowIndex="8">
+            <children>
+                <Button fx:id="confirmButton" prefWidth="160" text="Zatwierdź" onAction="#onConfirmButton"/>
+                <Button fx:id="cancelButton" prefWidth="160" text="Anuluj" onAction="#onCancelButton"/>
+            </children>
+        </VBox>
+
+    </children>
+
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+
+</GridPane>
