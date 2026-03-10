@@ -2,7 +2,7 @@
 Repozytorium dla przedmiotu Programowanie Obiektowe.
 
 
-
+Project GUI driving car using Java and JavaFX
 Projekt laboratoryjny Samochod (symulacja) - GUI
 ===============================================
 
